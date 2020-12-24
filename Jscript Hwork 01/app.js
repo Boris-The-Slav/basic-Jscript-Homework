@@ -1,8 +1,9 @@
 //global variables
 const numberPhones = 30
 const phonePrice = 119.95
-const tax = (119.95 / 100) * 5
-const adjustedPrice = phonePrice + tax
+const tax = 5
+const calculatedTax = (phonePrice / 100) * tax
+const adjustedPrice = phonePrice + calculatedTax
 const totalNoTax = phonePrice * numberPhones
 const totalWithTax = adjustedPrice * numberPhones
 //dom selection
