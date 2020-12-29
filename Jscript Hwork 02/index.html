@@ -5,10 +5,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>homework 02</title>
+    <link rel="stylesheet" href="app.css">
 </head>
 
 <body>
+    <h1>Conditionals and Functions Homeworks</h1>
+    <main>
+        <section>
+            <h2>Chinese New Year Calculator</h2>
+            <form action="#">
+                <label for="newYearInput">Enter Year</label>
+                <input type="text" id="newYearInput">
+                <button id="newYearBtn">Show Zodiac</button>
+                <h2 id="newYearResult"></h2>
+            </form>
+        </section>
+        <section>
+            <h2>Temperature Converter</h2>
+            <label for="temperatureInput">Enter Temperature</label>
+            <input type="text" id="temperatureInput">
+            <button id="convertTemp">Convert</button>
+            <h3 id="celsiusToF"></h3>
+            <h3 id="fahrenheitToC"></h3>
 
+        </section>
+        <section>
+            <h2>Age Calculator</h2>
+            <label for="birthYear">Enter Birth Year</label>
+            <input type="text" id="birthYear">
+            <button id="ageBtn">Show Age</button>
+            <h3 id="ageResult"></h3>
+
+        </section>
+        <section>
+            <h2>Typeof Checker</h2>
+            <button id="checkType">Check Type</button>
+            <ol id="typeList"></ol>
+        </section>
+        <section>
+            <h2>Dog Age Calculator</h2>
+            <label for="dogAge">Enter Dog Age</label>
+            <input type="text" id="dogAge">
+            <div>
+                <button id="convertToDog">Convert To Dog Years</button>
+                <button id="convertToHuman">Convert To Human Years</button>
+            </div>
+            <h3 id="dogAgeConverted"></h3>
+        </section>
+        <section>
+            <h2>ATM MACHINE</h2>
+            <h3>Cash in Account: <span id="totalCash"></span></h3>
+            <label for="withdrawCash">How much do you want to withdraw</label>
+            <input type="text" id="withdrawCash">
+            <button id="cashBtn">Proceed</button>
+            <h3 id="ammountWithdrawn"></h3>
+            <h3 id="ammountLeft"></h3>
+        </section>
+    </main>
+    <script src="app.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+*{
+    box-sizing: border-box;
+}
+body {
+    font-family: sans-serif;
+    background-color: lightblue;
+}
+main {
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+section {
+    border: 3px solid black;
+    padding: 20px;
+    background-color: white;
+    height: 280px;
+    margin: 20px;
+    border-radius: 10px;
+
+}
+main section:nth-of-type(6) h3{
+    margin-bottom: 6px;
+}
+button {
+    margin: 5px;
+    border: 2px groove gray;
+    padding: 5px;
+}
+label, input {
+    margin: 10px 3px;
+}
