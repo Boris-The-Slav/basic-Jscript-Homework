@@ -189,11 +189,16 @@ function manipulateCash(cash) {
                 withdrawCash.value = ""
             }, 1500);
         } else {
-            ammountWithdrawn.innerText = `You Withdrew ${parsedCash}$`
+            ammountWithdrawn.innerText = `You withdrew ${parsedCash}$`
             total = total - parsedCash
             totalCash.innerText = `${total}$`
-            ammountLeft.innerHTML = `You have ${total}$ remaining`
+            ammountLeft.innerText = `You have ${total}$ remaining`
             withdrawCash.value = ""
+            setTimeout(() => {
+                ammountWithdrawn.innerText = ""
+                ammountLeft.innerText = ""
+                withdrawCash.value = ""
+            }, 2500);
         }
     } else {
         ammountWithdrawn.innerText = "INVALID NUMBER"
