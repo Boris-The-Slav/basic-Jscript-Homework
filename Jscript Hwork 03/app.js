@@ -16,7 +16,7 @@ const invalidNumberArray = [23, "Stone", null, 1323, "Potato"]
 function doSum(array) {
     let result = 0
     for (number of array) {
-        if (isNaN(number)) {
+        if (!Number.isNaN(number)) {
             return "Error Invalid Number"
         }
         result += number
