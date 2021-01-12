@@ -12,7 +12,7 @@ const animals = ["Rat", "Ox", "Tiger", "Rabbit", "Dragon", "Snake",
 //button event listener
 newYearBtn.addEventListener("click", () => {
     let year = parseInt(newYearInput.value)
-    if (!isNaN(year)) {
+    if (!Number.isNaN(year)) {
         let calculatedYear = (year - 4) % 12
         //function for results  
         function newYearFunction(result) {
@@ -56,7 +56,7 @@ function temperatureConversion(temp) {
 //event listener
 convertTemp.addEventListener("click", () => {
     const temperature = parseFloat(temperatureInput.value)
-    if (!isNaN(temperature)) {
+    if (!Number.isNaN(temperature)) {
         temperatureConversion(temperature)
     } else {
         celsuisToF.innerText = "INVALID NUMBER"
@@ -89,7 +89,7 @@ function invalidInput() {
 }
 function calcAge(birth) {
     const birthYear = parseInt(birth)
-    if (!isNaN(birthYear)) {
+    if (!Number.isNaN(birthYear)) {
         if (currYear <= birthYear) {
             invalidInput()
         } else {
@@ -138,7 +138,7 @@ let dogYears = true
 //convert function
 function convertYears(age) {
     const parsedAge = parseFloat(age)
-    if (!isNaN(parsedAge)) {
+    if (!Number.isNaN(parsedAge)) {
         if (dogYears) {
             dogAgeConverted.innerText = `Your Dog is ${parsedAge} Human Years old and ${parsedAge * 7} Dog Years old.`
             dogAge.value = ""
@@ -180,7 +180,7 @@ totalCash.innerText = ` ${total}$`
 //cash function
 function manipulateCash(cash) {
     const parsedCash = parseInt(cash)
-    if (!isNaN(parsedCash)) {
+    if (!Number.isNaN(parsedCash)) {
         if (total < parsedCash) {
             ammountWithdrawn.innerText = "NOT ENOUGH FUNDS"
             ammountLeft.innerText = ""
