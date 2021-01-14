@@ -58,16 +58,18 @@ arrayBtn.addEventListener("click", () => {
 
 //homework03 - recipe
 
-//dom selections
+//dom selections 
+
+//inputs
 const recipeTitleInput = document.querySelector("#recipeTitleInput")
 const ingredientCount = document.querySelector("#ingredientCount")
 const ingredientTitle = document.querySelector("#igredientTitle")
 const ingredientAmmount = document.querySelector("#igredientAmmount")
-
+//buttons
 const createRecipe = document.querySelector("#createRecipe")
 const addIgredient = document.querySelector("#addIngredient")
 const resetRecipe = document.querySelector("#resetRecipe")
-
+//display elements
 const recipeTitle = document.querySelector("#recipeTitle")
 const ingredientNumber = document.querySelector("#ingredientNumber")
 const listContainer = document.querySelector("#listContainer")
@@ -152,6 +154,7 @@ addIgredient.addEventListener("click", () => {
 
 //reset function
 const reset = () => {
+    count = 0
     disabledState(false)
     ingredientTitle.value = "LIMIT REACHED"
     ingredientAmmount.value = "RESET RECIPE"
