@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap');
+body {
+    font-family: "source sans pro";
+}
+td {
+    border: 2px solid black;
+    border-collapse: collapse;
+    padding: 3px 10px;
+}
+table {
+    border-collapse: collapse;
+    width: 400px;
+   
+}
+button{
+    padding: 5px;
+    margin: 5px;
+}
+.recipeDisplays {
+    display: flex;
+    width: 800px;
+    justify-content: space-between;
+}
+.recipeDisplays div{
+    padding: 10px;
+    margin: 20px;
+    width: 50%;
+}
+.recipeContainer{
+    
+    display: flex;
+}
+#warningMsg {
+    font-size: 40px;
+    color: rgb(192, 0, 0);
+}
+
+#tableContainer {
+    width: 100%;
+}
+#inputBox{
+    width: 500px;
+}
+
+#createRecipeBox div,#createIngredientBox div{
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}

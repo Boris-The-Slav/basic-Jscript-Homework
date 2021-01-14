@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom homeworks</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+    <header>
+        <h1>DOM HOMEWORKS</h1>
+    </header>
+    <main>
+        <section>
+            <h2>
+                Print out an array Homework
+            </h2>
+            <label for="arraySizeInput">Enter Array Size</label>
+            <input type="number" id="arraySizeInput">
+            <button id="arrayBtn">Create and print Array</button>
+            <div id="arrayContainer">
+
+            </div>
+        </section>
+        <section>
+            <h2>Recipe Homework</h2>
+            <article class="recipeContainer">
+                <div id="inputBox">
+                    <div id="createRecipeBox">
+                        <div>
+                            <label for="recipeTitleInput">Enter Recipe Name:</label>
+                            <input type="text" name="" id="recipeTitleInput">
+                        </div>
+                        <div>
+                            <label for="ingredientCount">Enter Number of Igredients:</label>
+                            <input type="number" id="ingredientCount">
+                        </div>
+                        <button id="createRecipe">Create Recipe</button>
+                    </div>
+                    <div id="createIngredientBox">
+                        <div>
+                            <label for="ingredientTitle">Enter Ingredient Name:</label>
+                            <input type="text" id="igredientTitle">
+                        </div>
+                        <div>
+                            <label for="ingredientAmmount">Enter Amount:</label>
+                            <input type="text" id="igredientAmmount">
+                        </div>
+                        <button id="addIngredient">Add Ingredient</button>
+                        <button id="resetRecipe">Reset Recipe</button>
+                    </div>
+                </div>
+                <div id="recipeDisplay">
+                    <h2 id="recipeTitle">
+                    </h2>
+                    <p id="ingredientNumber"></p>
+                    <div class="recipeDisplays">
+                        <div id="listContainer"></div>
+                        <div id="tableContainer"></div>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+    </main>
+    <script src="app.js"></script>
+</body>
+
+</html>
