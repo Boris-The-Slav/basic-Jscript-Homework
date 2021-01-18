@@ -44,13 +44,13 @@ createBtn.addEventListener("click", () => {
 //create random color function
 
 Math.floor(Math.random() * 256);
-function createRandom(r, g, b) {
-  return `rgb(${r}, ${g}, ${b})`;
-}
-
-colorBtn.addEventListener("click", () => {
+function createRandom(r) {
   let red = Math.floor(Math.random() * 256);
   let green = Math.floor(Math.random() * 256);
   let blue = Math.floor(Math.random() * 256);
-  tableEl.style.backgroundColor = createRandom(red, green, blue);
+  return `rgb(${red}, ${green}, ${blue})`;
+}
+
+colorBtn.addEventListener("click", () => {
+  tableEl.style.backgroundColor = createRandom();
 });
