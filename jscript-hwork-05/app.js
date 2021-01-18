@@ -24,7 +24,6 @@ function createTable() {
     if (i === 0) {
       for (let g = 0; g <= Number(colInput.value); g++) {
         newRow.cells[g].innerText = `Column ${g}`;
-        newRow.cells[0].innerText = "TABLE";
       }
     }
 
