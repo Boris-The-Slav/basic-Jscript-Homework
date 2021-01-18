@@ -14,7 +14,7 @@ const magicMsg = document.querySelector("#magic--msg");
 
 //create the table funciton
 function createTable() {
-  tableEl.innerHtml = "";
+  tableEl.innerHTML = "";
   for (let i = 0; i < Number(rowInput.value) + 1; i++) {
     const newRow = document.createElement("TR");
     for (let j = 0; j < Number(colInput.value) + 1; j++) {
