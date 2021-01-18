@@ -15,14 +15,14 @@ const magicMsg = document.querySelector("#magic--msg");
 let allTd = [];
 //create the table funciton
 function createTable() {
-  for (let i = 0; i < Number(rowInput.value); i++) {
+  for (let i = 0; i < Number(rowInput.value) + 1; i++) {
     const newRow = document.createElement("TR");
-    for (let j = 0; j < Number(colInput.value); j++) {
+    for (let j = 0; j < Number(colInput.value) + 1; j++) {
       const newCell = document.createElement("TD");
       newRow.append(newCell);
     }
     if (i === 0) {
-      for (let g = 0; g < Number(colInput.value); g++) {
+      for (let g = 0; g <= Number(colInput.value); g++) {
         newRow.cells[g].innerText = `Column ${g}`;
         newRow.cells[0].innerText = "TABLE";
       }
