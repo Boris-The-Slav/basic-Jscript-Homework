@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1, initial-scale=1.0" />
+    <title>Dynamic Table HomeWork</title>
+    <link rel="stylesheet" href="app.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Magical Table</h1>
+    </header>
+    <main>
+      <section>
+        <p>Help me remember how big the magical table was.</p>
+        <div class="input--group">
+          <label for="row--input"
+            >The table had:<input type="number" id="row--input" /> rows.</label
+          >
+          <label for="col--input"
+            >And exactly:<input type="number" id="col--input" /> columns.
+          </label>
+          <button id="create--btn">Summon Table</button>
+          <p>
+            Nobody remembers the background color of the table so make a random
+            one
+          </p>
+          <button id="color--btn">Color Magic</button>
+        </div>
+        <div class="table--container">
+          <table id="table--element"></table>
+        </div>
+        <div>
+          <h2 id="magic--msg"></h2>
+        </div>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
