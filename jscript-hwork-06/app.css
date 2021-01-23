@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap");
+body {
+  font-family: Lato, sans-serif;
+  margin: 0;
+  background-color: #14213d;
+  height: 100vh;
+  font-size: 24px;
+  color: #e5e5e5;
+}
+
+main {
+  display: flex;
+}
+
+section {
+  width: 500px;
+  padding: 10px;
+}
+.animal--input--container div,
+.book--input--container div {
+  display: flex;
+  justify-content: space-between;
+}
+button {
+  display: block;
+  width: 100px;
+  height: 60px;
+  font-size: 18px;
+  border: 5px solid #fca311;
+  font-weight: 700;
+}
+
+label,
+input,
+button {
+  margin: 10px;
+}
+#check--book {
+  height: 18px;
+  width: 18px;
+}
