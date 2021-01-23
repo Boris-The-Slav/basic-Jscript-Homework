@@ -13,7 +13,7 @@ function Animal(name, kind) {
   this.name = name;
   this.kind = kind;
   this.speak = function (msg) {
-    return `${this.name} the ${this.kind} says: ${msg}`;
+    return `${this.name} was a happy little ${this.kind}and it decided one day to say: ${msg}`;
   };
 }
 //function for making object and display
