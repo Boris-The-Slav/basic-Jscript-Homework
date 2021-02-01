@@ -41,9 +41,31 @@ console.log(divide(150));
 
 //atm machine
 
-const coins = [50, 20, 10, 5, 1];
-
 function change(num) {
+  const resultArr = [];
+  const coins = [50, 20, 10, 5, 1];
+  for (let coin of coins)
+    if (num % coin === 0) {
+      for (let i = 0; i < num / coin; i++) {
+        resultArr.push(coin);
+      }
+      break;
+    } else {
+      for (let j = 0; j < (num - (num % coin)) / coin; j++) {
+        resultArr.push(coin);
+      }
+      num = num % coin;
+    }
+
+  return resultArr;
+}
+//works with n number
+console.log(change(120));
+
+//trying to make the bonus work
+function changeBonus(num) {
+  const coins = [50, 20, 10, 5, 1];
+  const coinLimits = [4, 8, 10, 20, 30];
   const resultArr = [];
   for (let coin of coins)
     if (num % coin === 0) {
@@ -60,5 +82,3 @@ function change(num) {
 
   return resultArr;
 }
-
-console.log(change(120));
