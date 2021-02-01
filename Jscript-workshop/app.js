@@ -40,3 +40,25 @@ divide(100);
 console.log(divide(150));
 
 //atm machine
+
+const coins = [50, 20, 10, 5, 1];
+
+function change(num) {
+  const resultArr = [];
+  for (let coin of coins)
+    if (num % coin === 0) {
+      for (let i = 0; i < num / coin; i++) {
+        resultArr.push(coin);
+      }
+      break;
+    } else {
+      for (let j = 0; j < (num - (num % coin)) / coin; j++) {
+        resultArr.push(coin);
+      }
+      num = num % coin;
+    }
+
+  return resultArr;
+}
+
+console.log(change(120));
