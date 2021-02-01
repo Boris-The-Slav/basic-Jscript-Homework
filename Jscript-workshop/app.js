@@ -60,4 +60,35 @@ function change(num) {
   return resultArr;
 }
 
-console.log(change(132));
+console.log(change(164));
+
+function changeBonus(num) {
+  const resultArr = [];
+  const coins = [50, 20, 10, 5, 1];
+  const limit = 4;
+  const coinLimits = [5, 8, 10, 15, 20];
+  for (let [i, coin] of coins.entries()) {
+    console.log(i);
+    if (num > coin * coinLimits[i]) {
+      for (let z = 0; z < coinLimits[i]; z++) {
+        resultArr.push(coin);
+      }
+      num = num - coin * coinLimits[i];
+    } else {
+      if (num % coin === 0 && num < coin * coinLimits[i]) {
+        for (let i = 0; i < num / coin; i++) {
+          resultArr.push(coin);
+        }
+      } else {
+        for (let j = 0; j < (num - (num % coin)) / coin; j++) {
+          resultArr.push(coin);
+        }
+      }
+      num = num % coin;
+    }
+  }
+
+  return resultArr;
+}
+
+console.log(changeBonus(120));
