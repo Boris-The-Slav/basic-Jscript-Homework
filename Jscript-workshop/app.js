@@ -88,4 +88,44 @@ function changeBonus(num) {
   return resultArr;
 }
 
-console.log(changeBonus(120));
+console.log(changeBonus(5000));
+
+function changeBouns02(num) {
+  const resultArr = [];
+  const coins = [
+    [50, 5],
+    [20, 10],
+    [10, 20],
+    [5, 40],
+    [1, 100],
+  ];
+  const changeTotal = coins.reduce((acc, el) => {
+    return (acc += el[0] * el[1]);
+  }, 0);
+  if (num <= changeTotal) {
+    for (coin of coins) {
+      if (num > coin[0] * coin[1]) {
+        for (let z = 0; z < coin[1]; z++) {
+          resultArr.push(coin[0]);
+        }
+        num = num - coin[0] * coin[1];
+      } else {
+        if (num % coin[0] === 0 && num < coin[0] * coin[1]) {
+          for (let i = 0; i < num / coin[0]; i++) {
+            resultArr.push(coin[0]);
+          }
+        } else {
+          for (let j = 0; j < (num - (num % coin[0])) / coin[0]; j++) {
+            resultArr.push(coin[0]);
+          }
+        }
+        num = num % coin[0];
+      }
+    }
+    return resultArr;
+  } else {
+    return "Not Enough Change";
+  }
+}
+
+console.log(changeBouns02(950));
